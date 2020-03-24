@@ -4,7 +4,7 @@ function map(sourceArray, func){
   return newArray;
 }
 
-function reduce(sourceArray, memo, func){
+function reduce(sourceArray, func, memo){
   memo = memo || sourceArray[0];
   sourceArray.forEach(item => memo = func(item, memo));
   return memo;
