@@ -1,1 +1,5 @@
-// Add your functions here
+function map(sourceArray, func){
+  let newArray = [];
+  sourceArray.forEach(item => newArray.push(func(item)))
+  return newArray
+}
