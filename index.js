@@ -3,3 +3,9 @@ function map(sourceArray, func){
   sourceArray.forEach(item => newArray.push(func(item)));
   return newArray;
 }
+
+function reduce(sourceArray, memo, func){
+  memo = memo || sourceArray[0];
+  sourceArray.forEach(item => memo = func(item, memo));
+  return memo;
+}
